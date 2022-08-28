@@ -54,6 +54,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        layout()
     }
 
     // MARK: - Layout
@@ -61,21 +62,40 @@ class ViewController: UIViewController {
     func layout() {
         view.addSubview(roundButton)
         roundButton.addSubview(buttonVstack)
+
         buttonVstack.addArrangedSubview(buttonTitle)
         buttonVstack.addArrangedSubview(buttonContent)
-        
+
         view.addSubview(mainTitle)
         view.addSubview(vStack)
         vStack.addArrangedSubview(hStack)
+
         hStack.addArrangedSubview(vocaRankingLabel)
         hStack.addArrangedSubview(vocaRankingCount)
-        
-        view.anchor(top: view.topAnchor,
-                    left: view.leftAnchor,
-                    bottom: view.bottomAnchor,
-                    right: view.rightAnchor
+
+        view.anchor(
+            top: view.topAnchor,
+            left: view.leftAnchor,
+            bottom: view.bottomAnchor,
+            right: view.rightAnchor
         )
-        view.setGradient(startColor: .backgroundMainColor, mediumColor: .subColor, lastColor: .mainColor)
+
+        view.setFourthGradient(
+            startColor: .topDarkBlue,
+            secondColor: .mediumDarkBlue,
+            thirdColor: .mediumBlue,
+            lastColor: .bottomBlue
+        )
+
+        roundButton.anchor(
+            top: view.safeAreaLayoutGuide.topAnchor,
+            left: view.safeAreaLayoutGuide.leftAnchor,
+            bottom: view.safeAreaLayoutGuide.bottomAnchor,
+            right: view.safeAreaLayoutGuide.rightAnchor,
+            paddingTop: 100,
+            paddingLeft: 98,
+            paddingRight: 98
+        )
     }
 }
 
