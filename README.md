@@ -2,7 +2,7 @@
 
 <div align="center">
   <img alt="Swift5.5" src ="https://img.shields.io/badge/Swift5.5-000000?&style=flat&logo=Swift&logoColor=F05138">
-  <img alt="UIKit" src ="https://img.shields.io/badge/SwiftUI-000000?&style=flat&logo=Swift&logoColor=0055af">
+  <img alt="UIKit" src ="https://img.shields.io/badge/UIKit-000000?&style=flat&logo=Swift&logoColor=0055af">
 </div>
 <br>
 <div align="center"><b>Develop Period : 22.08.28 ~ 22.09.01, For 5 days</b></div>
