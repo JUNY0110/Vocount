@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIColor {
-    static let softWhite: UIColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+    static let softWhite: UIColor = UIColor(red: 240, green: 240, blue: 240, alpha: 1)
     static let skyBlue: UIColor = UIColor(red: 108, green: 227, blue: 250, alpha: 1)
     static let softBlue: UIColor = UIColor(red: 102, green: 102, blue: 221, alpha: 0.5)
     static let topDarkBlue: UIColor = UIColor(red: 23, green: 23, blue: 23, alpha: 1)
@@ -27,7 +27,7 @@ extension UIColor {
 }
 
 extension UIView {
-    func setThirdGradient(startColor: UIColor, mediumColor: UIColor, lastColor: UIColor) {
+    func setThreeColorsGradient(startColor: UIColor, mediumColor: UIColor, lastColor: UIColor) {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.colors = [startColor.cgColor, mediumColor.cgColor, lastColor.cgColor]
         gradient.locations = [0.0, 0.5, 1.0]
@@ -37,7 +37,7 @@ extension UIView {
         layer.addSublayer(gradient)
     }
     
-    func setFourthGradient(startColor: UIColor, secondColor: UIColor, thirdColor: UIColor, lastColor: UIColor) {
+    func setFourColorsGradient(startColor: UIColor, secondColor: UIColor, thirdColor: UIColor, lastColor: UIColor) {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.colors = [startColor.cgColor, secondColor.cgColor, thirdColor.cgColor, lastColor.cgColor]
         gradient.locations = [0.0, 0.25, 0.4, 1.0]
