@@ -29,7 +29,7 @@ class RankingCell: UICollectionViewCell {
     }(UIStackView())
     
     let vocaRankingLabel: UILabel = {
-        $0.text = "1. 안녕하세요"
+//        $0.text = "1. 안녕하세요"
         $0.font = UIFont.systemFont(ofSize: 16,
                                     weight: .semibold)
         $0.textColor = .softWhite
@@ -37,7 +37,7 @@ class RankingCell: UICollectionViewCell {
     }(UILabel())
     
     let vocaRankingCount: UILabel = {
-        $0.text = "100회"
+//        $0.text = "100회"
         $0.font = UIFont.systemFont(ofSize: 16,
                                     weight: .semibold)
         $0.textColor = .softWhite
