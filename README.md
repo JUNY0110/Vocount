@@ -21,5 +21,19 @@
   
 - [x] 내가 오늘 많이 사용한 단어 체크 <br>
      Check the words I used the most today
+
+- [ ] 내 목소리만 인식 <br>
+     Recognize only my voice
+
+- [ ] 텍스트 코어데이터 저장 <br>
+     Save text to core data
      
 <br>
+
+## :sparkles: Skills
+### Tech
+- UIKit
+- Google STT API
+
+### Design
+- Figma
